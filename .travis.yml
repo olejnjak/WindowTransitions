@@ -16,3 +16,12 @@ after_deploy:
 script:
 - carthage build --no-skip-current --platform iOS --cache-builds
 - pod lib lint
+deploy:
+  provider: releases
+  api_key:
+    secure: VzDkWAOMI/oqD7C1O3jxKGWJcp0f/1dJUUdsdDopHJoC4/ftTEfs+Lj5QizJQbnOeiaebATFVe5gMjMcFzDV1rn7TP7ifx5JiSMJB6girpdEHeUmMAe17vALpfy3EfL/z4UUDG4sbFRNzZ9P1OUWOxNltpyd5nRtpb3b13WAftDaVKPdeGaAjUlXN+HZkgr74ibgqyGyr6CQiQC5PM0QXju/s10Mk8ANd3yItVZtVkl5g4t1yLibPBPcJId6Dya3cGDWt9qt9kmzbOooKexa9YNpap5jX6dD7QQG96HPwWLLU3ZZrkWN/uki1wX6wX+rOSdgZPaUmubnFILtpSXijasljiRsUJXFhCCDueVaRdegF9bZUndUdTlSbhqM2dHX770PLCoDIEHwkN2vc3qQ3H1OIuMl/kn48BR46tWx+NI/6u9PYyyP6636oV5lnqggUghy+77cocqsUP2dtimOOwcMiyP5xIIGo5DzacjmJW0eWbszWGR5Apuv4jTenziDF/cuDTcSvijmoeZoWYGNqHmtw+F4d1VAtlsQQBcaTV3yOVfAyYvsnXz+LM/0Q6LSByYc0st6pPWc5eginlAodaDE8x7a3na7ufEZYmduuZSTPTrlMW/ZVSy0nTe2/l6bfdo0tPHrJfTQUOBDqjCwT7cIjyTQzOIOuOTLtGjrazo=
+  file: "$FRAMEWORK_NAME.framework.zip"
+  skip_cleanup: true
+  on:
+    repo: olejnjak/WindowTransitions
+    tags: true

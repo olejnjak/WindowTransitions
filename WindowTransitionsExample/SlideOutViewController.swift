@@ -15,24 +15,24 @@ final class SlideOutViewController: UIViewController {
     // MARK: - UI actions
     
     @IBAction func topTapped(_ sender: Any) {
-        closeWith(direction: .top)
+        close(with: .top)
     }
     
     @IBAction func leadingTapped(_ sender: Any) {
-        closeWith(direction: .leading)
+        close(with: .leading)
     }
     
     @IBAction func trailingTapped(_ sender: Any) {
-        closeWith(direction: .trailing)
+        close(with: .bottom)
     }
     
     @IBAction func bottomTapped(_ sender: Any) {
-        closeWith(direction: .bottom)
+        close(with: .bottom)
     }
 
     // MARK: - Private helpers
     
-    private func closeWith(direction: SlideDirection) {
+    private func close(with direction: SlideDirection) {
         view.window?.animation.slideOut(with: direction) { [weak self] _ in
             self?.didEnd()
         }

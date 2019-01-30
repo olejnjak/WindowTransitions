@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'WindowTransitions'
-    s.version          = '0.1'
+    s.version          = '0.2'
     s.summary          = 'Set of basic UIWindow transitions'
     s.description      = <<-DESC
     Simplify UIWindow transitions using shorthand methods

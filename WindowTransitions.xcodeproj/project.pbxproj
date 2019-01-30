@@ -49,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		690317042201FFB900A9B993 /* WindowTransitions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = WindowTransitions.podspec; sourceTree = "<group>"; };
 		695BB826220094FB005A2E2C /* WindowTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WindowTransitions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		695BB829220094FB005A2E2C /* WindowTransitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowTransitions.h; sourceTree = "<group>"; };
 		695BB82A220094FB005A2E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		695BB81C220094FB005A2E2C = {
 			isa = PBXGroup;
 			children = (
+				690317042201FFB900A9B993 /* WindowTransitions.podspec */,
 				695BB828220094FB005A2E2C /* WindowTransitions */,
 				695BB83D220099D5005A2E2C /* WindowTransitionsExample */,
 				695BB827220094FB005A2E2C /* Products */,

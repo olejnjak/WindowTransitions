@@ -23,7 +23,7 @@ final class SlideOutViewController: UIViewController {
     }
     
     @IBAction func trailingTapped(_ sender: Any) {
-        close(with: .bottom)
+        close(with: .trailing)
     }
     
     @IBAction func bottomTapped(_ sender: Any) {
@@ -33,7 +33,7 @@ final class SlideOutViewController: UIViewController {
     // MARK: - Private helpers
     
     private func close(with direction: SlideDirection) {
-        view.window?.animation.slideOut(with: direction) { [weak self] _ in
+        view.window?.anim.slideOut(with: direction) { [weak self] _ in
             self?.didEnd()
         }
     }

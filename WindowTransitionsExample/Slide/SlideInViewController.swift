@@ -43,7 +43,7 @@ final class SlideInViewController: UIViewController {
         window = UIWindow(frame: .zero)
         window?.rootViewController = slideOut
         window?.makeKeyAndVisible()
-        window?.animation.slideIn(from: direction)
+        window?.anim.slideIn(from: direction)
     }
 }
 

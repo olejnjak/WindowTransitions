@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aYS-T3-h4d">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,153 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Slide In View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="PNJ-Y5-SwX">
+            <objects>
+                <navigationController id="aYS-T3-h4d" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l5G-XW-YxH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="egG-fd-xbJ" kind="relationship" relationship="rootViewController" id="Rb8-eF-LcP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opG-hv-TAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1687" y="466"/>
+        </scene>
+        <!--Transitions-->
+        <scene sceneID="XDw-NR-FJD">
+            <objects>
+                <tableViewController id="egG-fd-xbJ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cDu-cE-RPQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="qPF-MF-A53">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="JXy-El-Dej" style="IBUITableViewCellStyleDefault" id="XuB-Ya-Q9t" userLabel="Slide Cell">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XuB-Ya-Q9t" id="qq8-iW-t6e">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Slide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JXy-El-Dej">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="gdo-Ax-du3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Mjl-dV-tLw" style="IBUITableViewCellStyleDefault" id="af0-Xr-KFK" userLabel="Fade Cell">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="af0-Xr-KFK" id="WwW-se-4Eo">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Fade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mjl-dV-tLw">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="n7M-IA-Yab" kind="show" id="Gx2-aI-Trd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dxm-Sm-gG8">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dxm-Sm-gG8" id="Ovy-2A-NdR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="egG-fd-xbJ" id="0jc-H4-Bue"/>
+                            <outlet property="delegate" destination="egG-fd-xbJ" id="pHO-fN-WPs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Transitions" id="Y6K-zh-8XA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0H-M9-cEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-866" y="466"/>
+        </scene>
+        <!--Fade-->
+        <scene sceneID="UaD-0x-WMT">
+            <objects>
+                <viewController id="n7M-IA-Yab" customClass="FadeInViewController" customModule="WindowTransitionsExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hif-bb-MgI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFN-g8-drb">
+                                <rect key="frame" x="162.5" y="350.5" width="50" height="30"/>
+                                <state key="normal" title="Fade in"/>
+                                <connections>
+                                    <action selector="fadeInTapped:" destination="n7M-IA-Yab" eventType="touchUpInside" id="v6t-to-K2M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uFN-g8-drb" firstAttribute="centerY" secondItem="RmI-gf-JNY" secondAttribute="centerY" id="rNS-Xm-MFu"/>
+                            <constraint firstItem="uFN-g8-drb" firstAttribute="centerX" secondItem="RmI-gf-JNY" secondAttribute="centerX" id="sNa-Yi-jcT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RmI-gf-JNY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fade" id="JgB-vp-W5J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZh-M7-sQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="923"/>
+        </scene>
+        <!--Fade Out View Controller-->
+        <scene sceneID="MXB-CM-asf">
+            <objects>
+                <viewController storyboardIdentifier="FadeOutViewController" id="nN1-JM-C8D" customClass="FadeOutViewController" customModule="WindowTransitionsExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lpv-qg-XBv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2Q-n8-1zd">
+                                <rect key="frame" x="157.5" y="328.5" width="60" height="30"/>
+                                <state key="normal" title="Fade out"/>
+                                <connections>
+                                    <action selector="fadeOutTapped:" destination="nN1-JM-C8D" eventType="touchUpInside" id="LKE-0O-C8V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v2Q-n8-1zd" firstAttribute="centerY" secondItem="g9J-4X-zPo" secondAttribute="centerY" id="34l-8U-hRJ"/>
+                            <constraint firstItem="v2Q-n8-1zd" firstAttribute="centerX" secondItem="g9J-4X-zPo" secondAttribute="centerX" id="970-rs-w0b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g9J-4X-zPo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5x-Pc-adE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="922"/>
+        </scene>
+        <!--Slide-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SlideInViewController" customModule="WindowTransitionsExample" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,27 +165,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu4-MU-e9D">
-                                <rect key="frame" x="159.5" y="333" width="56" height="21"/>
+                                <rect key="frame" x="159.5" y="355" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbx-Fi-mwd">
-                                <rect key="frame" x="12" y="328.5" width="55" height="30"/>
+                                <rect key="frame" x="12" y="350.5" width="55" height="30"/>
                                 <state key="normal" title="Leading"/>
                                 <connections>
                                     <action selector="leadingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ufs-EI-z4w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldx-Jx-E8l">
-                                <rect key="frame" x="311" y="328.5" width="50" height="30"/>
+                                <rect key="frame" x="311" y="350.5" width="50" height="30"/>
                                 <state key="normal" title="Trailing"/>
                                 <connections>
                                     <action selector="trailingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hu0-lI-pjU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-b3-PJU">
-                                <rect key="frame" x="172.5" y="20" width="30" height="30"/>
+                                <rect key="frame" x="172.5" y="64" width="30" height="30"/>
                                 <state key="normal" title="Top"/>
                                 <connections>
                                     <action selector="topTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="91P-40-kf2"/>
@@ -70,9 +216,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Slide" id="Zyc-ZU-KD1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="84" y="27"/>
         </scene>
         <!--Slide Out View Controller-->
         <scene sceneID="LwR-Cf-pJw">
@@ -137,6 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HV0-nD-XFy" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="751" y="27"/>
         </scene>
     </scenes>
 </document>

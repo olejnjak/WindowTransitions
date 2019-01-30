@@ -15,8 +15,10 @@ public struct Animation<Base> {
 public protocol AnimationProvider { }
 
 public extension AnimationProvider {
-    public var animation: Animation<Self> { return Animation(base: self) }
-    public static var animation: Animation<Self>.Type { return Animation.self }
+    public var anim: Animation<Self> { return Animation(base: self) }
+    public static var anim: Animation<Self>.Type { return Animation.self }
 }
 
 extension UIWindow: AnimationProvider { }
+
+public typealias Completion = (Bool) -> ()

@@ -11,7 +11,7 @@ import Foundation
 extension Animation where Base: UIWindow {
     private var isRTL: Bool { return UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft }
     
-    public func slideIn(from direction: SlideDirection = .trailing, duration: TimeInterval = 0.3, completion: @escaping (Bool) -> () = { _ in }) {
+    public func slideIn(from direction: SlideDirection = .trailing, duration: TimeInterval = 0.3, completion: @escaping Completion = { _ in }) {
         let startFrame: CGRect
         let endFrame = UIScreen.main.bounds
         
@@ -33,7 +33,7 @@ extension Animation where Base: UIWindow {
             }, completion: completion)
     }
     
-    public func slideOut(with direction: SlideDirection = .trailing, duration: TimeInterval = 0.3, completion: @escaping (Bool) -> () = { _ in }) {
+    public func slideOut(with direction: SlideDirection = .trailing, duration: TimeInterval = 0.3, completion: @escaping Completion = { _ in }) {
         let currentFrame = base.bounds
         let endFrame: CGRect
         

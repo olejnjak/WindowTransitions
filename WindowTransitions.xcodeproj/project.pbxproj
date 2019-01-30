@@ -19,6 +19,9 @@
 		695BB84F22009BCC005A2E2C /* SlideOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BB84E22009BCC005A2E2C /* SlideOutViewController.swift */; };
 		695BB85022009C22005A2E2C /* WindowTransitions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 695BB826220094FB005A2E2C /* WindowTransitions.framework */; };
 		695BB85122009C22005A2E2C /* WindowTransitions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 695BB826220094FB005A2E2C /* WindowTransitions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		696968332201F866005988C8 /* FadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696968322201F866005988C8 /* FadeAnimation.swift */; };
+		696968372201FC22005988C8 /* FadeInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696968362201FC22005988C8 /* FadeInViewController.swift */; };
+		696968392201FCA2005988C8 /* FadeOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696968382201FCA2005988C8 /* FadeOutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		695BB848220099D6005A2E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		695BB84A220099D6005A2E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		695BB84E22009BCC005A2E2C /* SlideOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutViewController.swift; sourceTree = "<group>"; };
+		696968322201F866005988C8 /* FadeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimation.swift; sourceTree = "<group>"; };
+		696968362201FC22005988C8 /* FadeInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeInViewController.swift; sourceTree = "<group>"; };
+		696968382201FCA2005988C8 /* FadeOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				695BB83622009598005A2E2C /* AnimationProvider.swift */,
+				696968322201F866005988C8 /* FadeAnimation.swift */,
 				695BB8342200958D005A2E2C /* SlideAnimation.swift */,
 				695BB83222009558005A2E2C /* SlideDirection.swift */,
 				695BB8312200952F005A2E2C /* Supporting files */,
@@ -122,15 +129,33 @@
 		695BB83D220099D5005A2E2C /* WindowTransitionsExample */ = {
 			isa = PBXGroup;
 			children = (
+				696968352201FC13005988C8 /* Fade */,
+				696968342201FC09005988C8 /* Slide */,
 				695BB83E220099D5005A2E2C /* AppDelegate.swift */,
-				695BB840220099D5005A2E2C /* SlideInViewController.swift */,
-				695BB84E22009BCC005A2E2C /* SlideOutViewController.swift */,
 				695BB842220099D5005A2E2C /* Main.storyboard */,
 				695BB845220099D6005A2E2C /* Assets.xcassets */,
 				695BB847220099D6005A2E2C /* LaunchScreen.storyboard */,
 				695BB84A220099D6005A2E2C /* Info.plist */,
 			);
 			path = WindowTransitionsExample;
+			sourceTree = "<group>";
+		};
+		696968342201FC09005988C8 /* Slide */ = {
+			isa = PBXGroup;
+			children = (
+				695BB840220099D5005A2E2C /* SlideInViewController.swift */,
+				695BB84E22009BCC005A2E2C /* SlideOutViewController.swift */,
+			);
+			path = Slide;
+			sourceTree = "<group>";
+		};
+		696968352201FC13005988C8 /* Fade */ = {
+			isa = PBXGroup;
+			children = (
+				696968362201FC22005988C8 /* FadeInViewController.swift */,
+				696968382201FCA2005988C8 /* FadeOutViewController.swift */,
+			);
+			path = Fade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +274,7 @@
 			files = (
 				695BB8352200958D005A2E2C /* SlideAnimation.swift in Sources */,
 				695BB83322009558005A2E2C /* SlideDirection.swift in Sources */,
+				696968332201F866005988C8 /* FadeAnimation.swift in Sources */,
 				695BB83722009598005A2E2C /* AnimationProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				696968392201FCA2005988C8 /* FadeOutViewController.swift in Sources */,
 				695BB84F22009BCC005A2E2C /* SlideOutViewController.swift in Sources */,
 				695BB841220099D5005A2E2C /* SlideInViewController.swift in Sources */,
 				695BB83F220099D5005A2E2C /* AppDelegate.swift in Sources */,
+				696968372201FC22005988C8 /* FadeInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

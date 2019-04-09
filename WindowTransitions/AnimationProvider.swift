@@ -6,7 +6,7 @@
 //  Copyright © 2019 Jakub Olejník. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct Animation<Base> {
     public let base: Base
@@ -15,8 +15,8 @@ public struct Animation<Base> {
 public protocol AnimationProvider { }
 
 public extension AnimationProvider {
-    public var anim: Animation<Self> { return Animation(base: self) }
-    public static var anim: Animation<Self>.Type { return Animation.self }
+    var anim: Animation<Self> { return Animation(base: self) }
+    static var anim: Animation<Self>.Type { return Animation.self }
 }
 
 extension UIWindow: AnimationProvider { }

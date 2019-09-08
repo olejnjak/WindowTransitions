@@ -6,7 +6,7 @@
 //  Copyright © 2019 Jakub Olejník. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension Animation where Base: UIWindow {
     private var isRTL: Bool { return UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft }
